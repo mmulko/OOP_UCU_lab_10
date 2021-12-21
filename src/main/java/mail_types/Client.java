@@ -12,8 +12,11 @@ public class Client {
     private int age;
     private Gender sex;
 
-    private Client() {
+    public Client(String name, Gender sex, int age) {
         this.id = generateClientID();
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
     }
 
     public static class ClientIDGenerator {

@@ -1,0 +1,3 @@
+Dear %NAME!
+Happy birthday!
+We are glad that you are %AGE years old!

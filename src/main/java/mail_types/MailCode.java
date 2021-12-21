@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 public enum MailCode {
-    HAPPY_BIRTHDAY("happy_birthday.txt"), GREETINGS("greetings.txt");
+    HAPPY_BIRTHDAY("src/main/java/mail_types/happy_birthday.txt"), GREETINGS("src/main/java/mail_types/greetings.txt");
 
     private final String filename;
 
@@ -16,7 +16,6 @@ public enum MailCode {
     }
 
     public String generateText() {
-        // Read file
         String data = "";
         try {
             File myObj = new File(filename);
@@ -29,8 +28,6 @@ public enum MailCode {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-        // Inject client data
-        // Return text
         return data;
     }
 }
